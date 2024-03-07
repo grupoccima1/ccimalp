@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 :root{
     --primario: #254369;
     --secundario: #254369;
@@ -11,7 +15,7 @@
     box-sizing: border-box;
 }
 html{
-    scroll-behavior: smooth;
+    box-sizing: border-box; /* Investigar */
 }
 img {
     width: 100%;
@@ -135,6 +139,10 @@ h2{
 h3{
     font-size: 2rem;
 }
+p{
+    font-family: 'FuturaBook';
+    color: #021D49;
+}
 
 
 
@@ -228,6 +236,9 @@ h3{
 .lgo{
     width: 182px;
 }
-p{
-    color: #021D49;
-}
+ .newsletter-input{
+    border-radius: 15px 0 0 15px;
+ }
+ .newsletter-button{
+    border-radius: 0 15px 15px 0;
+ }
