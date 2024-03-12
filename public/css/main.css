@@ -104,6 +104,9 @@ img {
 .w64px{
     width: 4rem;
 }
+.w100px{
+    width: 6.25rem;
+}
 .h64px{
     height: 4rem;
 }
@@ -209,6 +212,9 @@ p{
 .seccion{
     padding: 7rem 0;
 }
+.pt_96px{
+    padding-top: 6rem;
+}
 /* Sobre-escribir Clases de Bootstrap */
 .navbar-light .navbar-brand{
     color: var(--primario);
@@ -253,4 +259,23 @@ p{
  .social{
     width: 20px;
     height: 16px;
+ }
+ .rd-main{
+    border-radius: 54px 54px 54px 54px;
+ }
+ .rd-op{
+    border-radius: 40px 40px 40px 40px;
+ }
+ .rd-ig{
+    border-radius: 75px 75px 75px 75px;
+ }
+ .ctr figure{
+    overflow: hidden;
+    transition: all 700ms ease;
+ }
+ .ctr figure img{
+    transition: all 700ms ease;
+ }
+ .ctr figure img:hover{
+    transform: scale(1.2);
  }
