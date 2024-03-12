@@ -98,6 +98,9 @@ img {
     width: 34.375rem;
 }
 
+.w-32px{
+    width: 2rem;
+}
 .w64px{
     width: 4rem;
 }
@@ -245,4 +248,9 @@ p{
  }
  .newsletter-button{
     border-radius: 0 15px 15px 0;
+ }
+
+ .social{
+    width: 20px;
+    height: 16px;
  }
