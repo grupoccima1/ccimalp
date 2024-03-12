@@ -3,7 +3,7 @@
     margin: 0;
 }
 :root{
-    --primario: #254369;
+    --primario: #021D49;
     --secundario: #254369;
     --master: #1C293A;
     --slave: #4167B0;
@@ -248,6 +248,11 @@ p{
 .log{
     width: 64px;
 }
+@media (max-width:768px) {
+    .log{
+        width: 50px;
+    }
+}
 .lgo{
     width: 182px;
 }
@@ -281,3 +286,12 @@ p{
  .ctr figure img:hover{
     transform: scale(1.2);
  }
+ @media (max-width:768px) {
+    .rps{
+        width: 4rem;
+    }
+}
+.clr{
+    color: #4167B0;
+    font-size: 20px;
+}
