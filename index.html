@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="public/css/normalize.css">
   <link rel="stylesheet" href="publiccss/all.css">
   <link rel="stylesheet" href="publiccss/main2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
@@ -26,7 +27,11 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-3">
-            <button class="btn text-white bg__primario me-md-2 d-none d-lg-block" type="button">Discover More</button>
+            <a href="./public/files/presentacion_corta_general_precios.pdf" target="_blank" rel="nofollow"
+              download="Portto Blanco">
+              <button class="btn text-white bg__primario me-md-2 d-none d-lg-block" type="button">Descargar
+                Brochure</button>
+            </a>
           </div>
         </div>
         <div class="">
@@ -38,9 +43,10 @@
           <div class="collapse navbar-collapse justify-content-end Roboto-Medium" id="navbarNav">
             <ul class="navbar-nav ">
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">Nosotros</a>
+                <a class="nav-link fw-bold" data-bs-toggle="popover" data-bs-placement="bottom"
+                  data-bs-content="Content" href="#">Menu</a>
               </li>
-              <li class="nav-item">
+              <!--  <li class="nav-item">
                 <a class="nav-link fw-bold" href="#">Vacantes</a>
               </li>
               <li class="nav-item">
@@ -49,13 +55,31 @@
               <li class="nav-item">
                 <a class="nav-link fw-bold" href="#">Nuestros proyectos</a>
               </li>
+              <li class="nav-item">
+                <a class="social" rel="nofollow" href="#" target="_blank"><img class="w-32px"
+                  src="./public/img/icons/social_media/Whatsapp.svg" alt=""></a>
+              </li> -->
             </ul>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-3">
+              <a href="./public/files/presentacion_corta_general_precios.pdf" target="_blank" rel="nofollow"
+                download="Portto Blanco">
+                <button class="btn text-primary btn-outline-primary me-md-2 d-none d-lg-block"
+                  type="button">Whatsapp</button>
+              </a>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-3">
+              <a href="./public/files/presentacion_corta_general_precios.pdf" target="_blank" rel="nofollow"
+                download="Portto Blanco">
+                <button class="btn text-white bg__primario me-md-2 d-none d-lg-block" type="button">Llamada</button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </nav>
   </header>
   <main>
+    <!-- Principal -->
     <section id="hero">
       <div class="container">
         <div class="row pt_96px">
@@ -64,9 +88,10 @@
               <img class="rd-main mt-3" src="public/img/main_1.jpg" alt="">
             </figure>
           </div>
-          <div class="col-sm-12 col-md-5 order-md-1 d-flex flex-column justify-content-center h-100 pr-2">
+          <div class="col-sm-12 col-md-5 order-md-1 d-flex flex-column justify-content-center pr-2">
             <h1 class="FuturaDemi fs-1 text-center text-lg-start">OPORTUNIDADES</h1>
-            <p class="text-center text-lg-start">Toma el control de tu futuro financiero y logra la vida que siempre haz soñado</p>
+            <p class="text-center text-lg-start">Toma el control de tu futuro financiero y logra la vida que siempre has
+              soñado</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-3">
               <button class="btn text-white bg__primario me-md-2" type="button">Contacta a tu aliado sherpa</button>
             </div>
@@ -75,6 +100,106 @@
       </div>
     </section>
 
+    <!-- Calculadora de inversiones -->
+    <section>
+      <div class="container">
+        <div class="row mt-5 justify-content-center justify-content-lg-between">
+          <div class="col-12">
+            <h2 class="FuturaDemi fs-2 my-5 text-center text-uppercase"> Simulador de Inversiones</h2>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="card p-3 cr">
+              <div class="form-group">
+                <label for="exampleDataList" class="form-label">Unidad de Negocio </label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
+                <datalist id="datalistOptions">
+                  <option selected value="Habitacional">
+                  <option value="Industrial">
+                </datalist>
+              </div>
+              <div class="d-flex justify-content-end align-items-center pt-4">
+                <h5 class="h5 text-uppercase blue-text ">¿Cuanto quieres invertir?</h5>
+                <br>
+              </div>
+              <div class="row pt-3">
+                <div class="col-12 mt-2 order-xl-first">
+                  <div class="form-group">
+                    <input placeholder="$10,000.00" class='form-control'></input>
+                  </div>
+                </div>
+                <div class="row mt-5 d-flex justify-content-between">
+                  <div class="col-6">
+                    <p class="FuturaBook">Inversion inicial</p>
+                  </div>
+                  <div class="col-6">
+                    <p class="FuturaBook">$100,000.00MXN</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <p class="FuturaBook">Plusvalia estimada</p>
+                  </div>
+                  <div class="col-6">
+                    <p class="FuturaBook">$100,000.00MXN</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <p class="FuturaBook">Renta total estimada</p>
+                  </div>
+                  <div class="col-6">
+                    <p class="FuturaBook">$100,000.00MXN</p>
+                  </div>
+                  <hr style="height:2px;border-width:0;color:black;background-color:black">
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <p class="FuturaBook">Valor final de la inversion</p>
+                  </div>
+                  <div class="col-6">
+                    <p class="FuturaBook">$317,607.64MXN</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-11 col-lg-6">
+            <div id="chart" class="charts"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Construye -->
+    <section class="seccion" id="beneficios">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-10">
+            <div class="row d-flex justify-content-between">
+              <div class="col-12 col-lg-4">
+                <h2 class="FuturaDemi fs-2 fw-bold text-uppercase blue-text text-center text-lg-start">Construye el camino
+                </h2>
+              </div>
+              <div class="col-12 col-lg-4">
+                <p class="text-center text-lg-end">Tenemos mas de 21 años GENERANDO PROGRESO para nuestros aliados</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 col-lg-10">
+              <!-- <img src="public/video/sherpa.mp4" class="d-block w-100" alt="imagen 01"> -->
+              <video src="public/video/sherpa.mp4" class="d-block w-100" autoplay loop muted></video>
+              <!-- Sin controles y con autoplay -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Oportunidades -->
     <section class="seccion" id="">
       <div class="container">
         <div class="row justify-content-center">
@@ -83,7 +208,8 @@
           </div>
           <div class="col-12 col-lg-9 d-flex justify-content-end">
             <h2 class="text-master"> </h2>
-            <p class="FuturaBook fs-5 text-center text-lg-end">Creamos el poder de la alianza para generar progreso en nuestro entorno
+            <p class="FuturaBook fs-5 text-center text-lg-end">Creamos el poder de la alianza para generar progreso en
+              nuestro entorno
             </p>
           </div>
         </div>
@@ -112,28 +238,9 @@
       </div>
     </section>
 
-    <section class="seccion" id="beneficios">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-12 col-lg-4">
-            <h2 class="FuturaDemi fs-2 fw-bold text-uppercase blue-text text-center text-lg-end">Construye el camino</h2>
-          </div>
-          <div class="col-12 col-lg-4">
-            <p class="text-center text-lg-end">Tenemos mas de 21 años GENERANDO PROGRESO para nuestros aliados</p>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-12 col-lg-10">
-              <!-- <img src="public/video/sherpa.mp4" class="d-block w-100" alt="imagen 01"> -->
-              <video src="public/video/sherpa.mp4" class="d-block w-100" autoplay></video>
-              <!-- Sin controles y con autoplay -->
-            </div>
-          </div>
 
-        </div>
-      </div>
-    </section>
-
-    <section class="seccion">
+    <!-- Experiencia -->
+    <section class="seccion wow animate__swing">
       <div class="container">
         <div class="row d-flex justify-content-end">
           <div class="col-6 col-lg-3 text-center pt-5">
@@ -156,6 +263,7 @@
       </div>
     </section>
 
+    <!-- Noticias -->
     <section class="seccion">
       <div class="container">
         <div class="row justify-content-between">
@@ -186,6 +294,7 @@
       </div>
     </section>
 
+    <!-- Bolsa de trabajo -->
     <section class="d-none d-lg-block">
       <div class="container">
         <div class="row d-flex justify-content-center">
@@ -266,75 +375,8 @@
       </div>
     </section>
 
-    <section>
-      <div class="container">
-        <div class="row mt-5 justify-content-center justify-content-lg-between">
-          <div class="col-12">
-            <h2 class="FuturaDemi fs-2 my-5 text-center text-uppercase"> Simulador de Inversiones</h2>
-          </div>
-          <div class="col-12 col-lg-6">
-            <div class="card p-3">
-              <div class="form-group">
-                <label for="exampleDataList" class="form-label">Unidad de Negocio </label>
-                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
-                <datalist id="datalistOptions">
-                  <option selected value="Habitacional">
-                  <option value="Industrial">
-                </datalist>
-              </div>
-              <div class="d-flex justify-content-end align-items-center pt-4">
-                <h5 class="h5 text-uppercase blue-text ">¿Cuanto quieres invertir?</h5>
-                <br>
-              </div>
-              <div class="row pt-3">
-                <div class="col-12 mt-2 order-xl-first">
-                  <div class="form-group">
-                    <input placeholder="$10,000.00" class='form-control'></input>
-                  </div>
-                </div>
-                <div class="row mt-5 d-flex justify-content-between">
-                  <div class="col-6">
-                    <p class="FuturaBook">Inversion inicial</p>
-                  </div>
-                  <div class="col-6">
-                    <p class="FuturaBook">$100,000.00MXN</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-6">
-                    <p class="FuturaBook">Plusvalia estimada</p>
-                  </div>
-                  <div class="col-6">
-                    <p class="FuturaBook">$100,000.00MXN</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-6">
-                    <p class="FuturaBook">Renta total estimada</p>
-                  </div>
-                  <div class="col-6">
-                    <p class="FuturaBook">$100,000.00MXN</p>
-                  </div>
-                  <hr style="height:2px;border-width:0;color:black;background-color:black">
-                </div>
-                <div class="row">
-                  <div class="col-6">
-                    <p class="FuturaBook">Valor final de la inversion</p>
-                  </div>
-                  <div class="col-6">
-                    <p class="FuturaBook">$317,607.64MXN</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-11 col-lg-6">
-            <div id="chart" class="charts"></div>
-          </div>
-        </div>
-      </div>
-    </section>
 
+    <!-- Marcas -->
     <section id="section">
       <div class="container">
         <div class="row mt-5">
@@ -361,7 +403,9 @@
         </div>
       </div>
     </section>
-    
+
+
+    <!-- Testimonios -->
     <section>
       <div class="container">
         <div class="row mt-5">
@@ -383,7 +427,7 @@
                     </figure>
                   </div>
                   <div class="col-9 d-flex flex-column justify-content-center">
-                    <h4 class="FuturaMedium clr">IC. Ricardo Medina Rojas</h4>
+                    <h4 class="FuturaDemi clr">IC. Ricardo Medina Rojas</h4>
                     <p>CEO y fundador de grupo CCIMA</p>
                   </div>
                 </div>
@@ -456,53 +500,54 @@
         </div>
       </div>
     </section>
-    
-      
 
+
+    <!-- Contacto -->
     <section class="seccion" id="beneficios">
       <div class="container">
-          <div class="row d-flex justify-content-center">
-            <div class="col-12 col-lg-10">
-              <div class="card bg-light rounded-3 border-0 ">
-                <div class="card-body">
-                  <div class="row d-flex justify-content-between">
-                    <div class="col-12 col-lg-4 ctr">
-                      <h5 class="h4 card-title text-shadow-sm">Necesitas ponerte en contacto</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-                        luctus nec </p>
-                      <figure>
-                        <img class="rd-op" src="./public/img/main_18.jpg" alt="">
-                      </figure>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <div class="">
-                        <form class="flex-column py-4 py-lg-0">
-                          <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                              aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                          </div>
-                          <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1">
-                          </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-lg-10">
+            <div class="card bg-light rounded-3 border-0 ">
+              <div class="card-body">
+                <div class="row d-flex justify-content-between">
+                  <div class="col-12 col-lg-4 ctr">
+                    <h5 class="h4 card-title text-shadow-sm fw-bold">Necesitas ponerte en contacto</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                      luctus nec </p>
+                    <figure>
+                      <img class="rd-op" src="./public/img/main_18.jpg" alt="">
+                    </figure>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="">
+                      <form class="flex-column py-4 py-lg-0">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Correo</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <!--                           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+ -->
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Telefono</label>
+                          <input type="text" class="form-control" id="exampleInputPassword1">
+                        </div>
 
-                          <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Mensaje</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                          </div>
-                          <button type="submit" class="btn text-white bg__primario">Submit</button>
-                        </form>
-                      </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Mensaje</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn text-white bg__primario">Enviar</button>
+                      </form>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
       </div>
     </section>
+
     <!-- Footer -->
     <section id="footer">
       <div class="container">
@@ -513,43 +558,44 @@
             <div class="input-group mb-3">
               <input type="text" class="form-control newsletter-input" placeholder="Ingresa tu email" aria-label=""
                 aria-describedby="button-addon2">
-              <button class="btn text-white bg__primario newsletter-button" type="button" id="button-addon2">Suscribir</button>
+              <button class="btn text-white bg__primario newsletter-button" type="button"
+                id="button-addon2">Suscribir</button>
             </div>
           </div>
         </div>
 
 
         <div class="row justify-content-between mt-5">
-            <div class="col-12 col-lg-3 text-center">
-              <img class="lgo pb-5 pb-lg-0" src="./public/img/main_19.png" alt="">
-            </div>
-            <div class="col-12 col-lg-3 d-flex align-items-end">
-              <ul class="list-unstyled">
-                <li><a class=" text-primary text-decoration-none" href="">Politicas de privacidad</a></li>
-                <li><a class=" text-primary text-decoration-none" href="">Condiciones de uso</a></li>
-              </ul>
-            </div>
-            <div class="col-12 col-lg-3 d-flex align-items-center">
-              <ul class="list-unstyled">
-                <span class="fs_20px fw-bold"> Nuestras Marcas</span>
-                <li><a class=" text-primary text-decoration-none" href="">Construye</a></li>
-                <li><a class=" text-primary text-decoration-none" href="">Porto blanco</a></li>
-                <li><a class=" text-primary text-decoration-none" href="">Navetec</a></li>
+          <div class="col-12 col-lg-3 text-center">
+            <img class="lgo pb-5 pb-lg-0" src="./public/img/main_19.png" alt="">
+          </div>
+          <div class="col-12 col-lg-3 d-flex align-items-end">
+            <ul class="list-unstyled">
+              <li><a class=" text-primary text-decoration-none" href="">Politicas de privacidad</a></li>
+              <li><a class=" text-primary text-decoration-none" href="">Condiciones de uso</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3 d-flex align-items-center">
+            <ul class="list-unstyled">
+              <span class="fs_20px fw-bold"> Nuestras Marcas</span>
+              <li><a class=" text-primary text-decoration-none" href="">Construye</a></li>
+              <li><a class=" text-primary text-decoration-none" href="">Portto Blanco</a></li>
+              <li><a class=" text-primary text-decoration-none" href="">Navetec</a></li>
 
-              </ul>
-            </div>
-            <div class="col-12 col-lg-2 d-flex align-items-end">
-              <ul class="list-unstyled">
-                <li><a class=" text-primary text-decoration-none" href="">1900 soluciones financieras</a></li>
-                <li><a class=" text-primary text-decoration-none" href="">Capital CCIMA</a></li>
-                <li><a class=" text-primary text-decoration-none" href="">Rent Solutions</a></li>
-              </ul>
-            </div>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-2 d-flex align-items-end">
+            <ul class="list-unstyled">
+              <li><a class=" text-primary text-decoration-none" href="">1900 soluciones financieras</a></li>
+              <li><a class=" text-primary text-decoration-none" href="">Capital CCIMA</a></li>
+              <li><a class=" text-primary text-decoration-none" href="">Rent Solutions</a></li>
+            </ul>
+          </div>
         </div>
 
         <div class="row mt-5">
           <div class="col-12 col-lg-8 d-flex justify-content-end">
-            <h4 class="FuturaBook text-center text-lg-start mb-3 mb-lg-0">Derechos reservados Grupo CCIMA 2024 16px</h4>
+            <h4 class="FuturaBook text-center text-lg-start mb-3 mb-lg-0">Derechos reservados Grupo CCIMA 2024</h4>
           </div>
           <div class="col-12 col-lg-4 text-center text-lg-end">
             <a class="social" rel="nofollow" href="#" target="_blank"><img class="w-32px"
@@ -572,6 +618,19 @@
     <!-- Agregar las Fuentes Futura book demi bold -->
     <!-- animar el countdown  -->
   </main>
+
+  <!-- <div class="container-boton "> -->
+  <a href="https://api.whatsapp.com/send?phone=524422912223" target="_blank">
+    <img class="btn-wsp" src="./public/img/wa.png" alt="">
+  </a>
+  <a href="#" target="_blank">
+    <img class="btn-rg" src="./public/img/cel.png" alt="">
+  </a>
+  <a href="./public/files/presentacion_corta_general_precios.pdf" target="_blank" rel="nofollow"
+    download="Portto Blanco">
+    <img class="btn-dw" src="./public/img/PTB.png" alt="">
+  </a>
+  <!--  </div> -->
   <!-- EChart -->
   <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
 
@@ -580,6 +639,16 @@
   <script src="./public/js/ct.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+  </script>
+  <script src="./public/js/wow.min.js"></script>
+  <script>
+  new WOW().init();
   </script>
 
 </body>
