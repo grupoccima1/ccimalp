@@ -46,7 +46,7 @@
                 <a class="nav-link fw-bold" data-bs-toggle="popover" data-bs-placement="bottom"
                   data-bs-content="Content" href="#">Menu</a>
               </li>
-              
+
             </ul>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-3">
               <a href="./public/files/presentacion_corta_general_precios.pdf" target="_blank" rel="nofollow"
@@ -88,76 +88,58 @@
       </div>
     </section>
 
-    <!-- Calculadora de inversiones -->
-    <section>
+    <!-- simulador de Inveriones -->
+    <section class="seccion">
       <div class="container">
-        <div class="row mt-5 justify-content-center justify-content-lg-between">
-          <div class="col-12">
-            <h2 class="FuturaDemi fs-2 my-5 text-center text-uppercase"> Simulador de Inversiones</h2>
-          </div>
-          <div class="col-12 col-lg-6">
-            <div class="card p-3 cr">
-              <div class="form-group">
-                <label for="exampleDataList" class="form-label">Unidad de Negocio </label>
-                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
-                <datalist id="datalistOptions">
-                  <option selected value="Habitacional">
-                  <option value="Industrial">
-                </datalist>
+        <h2 class="text-uppercase text-center FuturaDemi text-primario">Simulador de inversión </h2>
+        <h2 class="FuturaDemi text-uppercase text-center text-secondary fs_20px">“Descubre el Potencial de Tu Inversión con Nuestro Simulador de Inversiones” </h2>
+        <div class="row">
+          <div class="col-6">
+            <div class="d-flex flex-column justify-content-around h-100">
+              <div class="mb-3">
+                <label for="unidad_negocio" class="form-label"><span class="text-primario FuturaDemi text-uppercase">Unidad de Negocio</span></label>
+                <select id="investment-select" class="form-select w-75" aria-label="Default select example">
+                  <option value="1" disabled><span>Industrial</span></option>
+                  <option value="2" selected><span>Habitacional</span></option>
+                </select>
               </div>
-              <div class="d-flex justify-content-end align-items-center pt-4">
-                <h5 class="h5 text-uppercase blue-text ">¿Cuanto quieres invertir?</h5>
-                <br>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"><span class="text-primario FuturaDemi text-uppercase"> ¿Cuánto quieres invertir?</span></label>
+                <select id="investment-select-2" class="form-select w-75" aria-label="Default select example">
+                  <option value="3"><span>terreno 160 m2 - Portto Blanco Bernal</span></option>
+                  <option value="4"><span>terreno 200 m2 - Portto Blanco Bernal</span></option>
+                  <option value="5"><span>terreno 128 m2 - Portto Blanco Cimatario</span></option>
+                </select>
               </div>
-              <div class="row pt-3">
-                <div class="col-12 mt-2 order-xl-first">
-                  <div class="form-group">
-                    <input placeholder="$10,000.00" class='form-control'></input>
-                  </div>
-                </div>
-                <div class="row mt-5 d-flex justify-content-between">
-                  <div class="col-6">
-                    <p class="FuturaBook">Inversion inicial</p>
-                  </div>
-                  <div class="col-6">
-                    <p class="FuturaBook">$100,000.00MXN</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-6">
-                    <p class="FuturaBook">Plusvalia estimada</p>
-                  </div>
-                  <div class="col-6">
-                    <p class="FuturaBook">$100,000.00MXN</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-6">
-                    <p class="FuturaBook">Renta total estimada</p>
-                  </div>
-                  <div class="col-6">
-                    <p class="FuturaBook">$100,000.00MXN</p>
-                  </div>
-                  <hr style="height:2px;border-width:0;color:black;background-color:black">
-                </div>
-                <div class="row">
-                  <div class="col-6">
-                    <p class="FuturaBook">Valor final de la inversion</p>
-                  </div>
-                  <div class="col-6">
-                    <p class="FuturaBook">$317,607.64MXN</p>
-                  </div>
-                </div>
+              <div class="">
+                <table class="table table-hover border-0">
+                  <tbody>
+                    <tr class="">
+                      <td class="text-primario FuturaDemi border-0">Inversión inicial</td>
+                      <td class="text-primario FuturaBold border-0"> $<span id="inversion_inicial">100,000.00</span>MXN </td>
+                    </tr>
+                    <tr>
+                      <td class="text-primario FuturaDemi">Plusvalía estimada</td>
+                      <td class="text-primario FuturaBold"> $<span id="plusvalia_estimada">100,000.00</span>MXN</td>
+                    </tr>
+                    <tr>
+                      <td class="text-primario FuturaDemi border-0">Renta total estimada</td>
+                      <td class="text-primario FuturaBold border-0"> $<span id="valor_final">100,000.00</span>MXN</td>
+                    </tr>
+                  </tbody>
+                </table>
+
               </div>
+
             </div>
           </div>
-          <div class="col-11 col-lg-6">
+          <div class="col-6">
             <div id="chart" class="charts"></div>
           </div>
         </div>
       </div>
     </section>
-
+    
     <!-- Video Construye -->
     <section class="seccion" id="beneficios">
       <div class="container">
@@ -165,7 +147,8 @@
           <div class="col-10">
             <div class="row d-flex justify-content-between">
               <div class="col-12 col-lg-4">
-                <h2 class="FuturaDemi fs-2 fw-bold text-uppercase blue-text text-center text-lg-start">Construye el camino
+                <h2 class="FuturaDemi fs-2 fw-bold text-uppercase blue-text text-center text-lg-start">Construye el
+                  camino
                 </h2>
               </div>
               <div class="col-12 col-lg-4">
@@ -636,7 +619,7 @@
   </script>
   <script src="./public/js/wow.min.js"></script>
   <script>
-  new WOW().init();
+    new WOW().init();
   </script>
 
 </body>
