@@ -1,0 +1,448 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --primario: #021D49;
+    --secundario: #254369;
+    --master: #1C293A;
+    --slave: #4167B0;
+    --gray: #CBD5E1;
+    --danger: #BD2F39;
+}
+*{
+    padding: 0 ;
+    margin: 0 ;
+    box-sizing: border-box;
+}
+html{
+    box-sizing: border-box; /* Investigar */
+}
+img {
+    width: 100%;
+}
+/***** Fuentes *****/
+@font-face {
+    font-family: FuturaBold;
+    src: url('../fonts/Futura/FuturaPTBold.otf');
+}
+@font-face {
+    font-family: FuturaBook;
+    src: url('../fonts/Futura/FuturaPTBook.otf');
+}
+@font-face {
+    font-family: FuturaDemi;
+    src: url('../fonts/Futura/FuturaPTDemi.otf');
+}
+@font-face {
+    font-family: FuturaMedium;
+    src: url('../fonts/Futura/FuturaPTMedium.otf');
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url('../fonts/Roboto/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: Roboto-Medium;
+    src: url('../fonts/Roboto/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url('../fonts/Roboto/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: k2d-Normal;
+    src: url('../fonts/K2D/K2D-Regular.ttf');
+}
+@font-face {
+    font-family: k2d-Bold;
+    src: url('../fonts/K2D/K2D-Bold.ttf');
+}
+@font-face {
+    font-family: k2d-Medium;
+    src: url('../fonts/K2D/K2D-Medium.ttf');
+}
+
+.FuturaBook{
+    font-family: 'FuturaBook';
+}
+.FuturaBold{
+    font-family: 'FuturaBold';
+}
+.FuturaDemi{
+    font-family: 'FuturaDemi';
+}
+.FuturaMedium{
+    font-family: 'FuturaMedium';
+}
+.RobotoBold{
+    font-family: 'Roboto-Bold';
+}
+.RobotoMedium{
+    font-family: 'Roboto-Medium';
+} 
+.RobotoLigth{
+    font-family: 'Roboto-Ligth';
+} 
+.K2dBold{
+    font-family: 'k2d-Bold';
+}
+.K2dMedium{
+    font-family: 'k2d-Medium';
+} 
+.K2dNormal{
+    font-family: 'k2d-Normal';
+} 
+
+.fs_16px{
+    font-size: 1rem;
+}
+.fs_20px{
+    font-size: 1.25rem;
+}
+.fs_22px{
+    font-size: 1.375rem;
+}
+.fs_24px{
+    font-size: 1.5rem;
+}
+.fs_26px{
+    font-size: 1.625rem;
+}
+.fs_28px{
+    font-size: 1.75rem;
+}
+.fs_30px{
+    font-size: 1.875rem;
+}
+.fs_46px{
+    font-size: 2.875rem;
+}
+.fs_48px{
+    font-size: 3rem;
+}
+.fs_50px{
+    font-size: 3.125rem;
+}
+.fs_52px{
+    font-size: 3.25rem;
+}
+.fs_54px{
+    font-size: 3.375rem;
+}
+
+.fs_85px{
+    font-size: 5.375rem;
+}
+
+/**** width y height ****/
+.w100vw{
+    width: 100vw;
+}
+.h100vh{
+    height: 100vh;
+}
+.w550px{
+    width: 34.375rem;
+}
+
+.w-32px{
+    width: 2rem;
+}
+.w64px{
+    width: 4rem;
+}
+.w100px{
+    width: 6.25rem;
+}
+.h64px{
+    height: 4rem;
+}
+
+
+/***** Colors *****/
+.text-primario{
+    color: var(--primario);
+} 
+.text-secundario{
+    color: var(--secundario);
+} 
+.text-master{
+    color: var(--master);
+} 
+.text-slave{
+    color: var(--slave);
+} 
+.text-gray{
+    color: var(--gray);
+}
+
+
+/***** heading *****/
+h1, h2 h3, h4{
+    color: var(--primario);
+    font-family: 'Roboto-Medium';
+    text-transform: uppercase;   
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-family: 'FuturaBook';
+    color: #021D49;
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+h5{
+    font-family: 'FuturaBook';
+    color: #021D49;
+}
+p{
+    font-family: 'FuturaBook';
+    color: #021D49;
+}
+
+
+
+/***** Background *****/
+
+.bg__promociones{
+    background-image: url('../img/bg/kids_park.jpg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat:  no-repeat;
+    height: 70vh;
+    background-attachment: fixed;
+}
+.bg__primario{
+    background-color: var(--primario);
+}
+.bg__danger{
+    background-color: var(--danger);
+}
+.bg__gray-200{
+    background-color: #D9D9D9;
+}
+.bg__gray-500{
+    background-color: var(--gray);
+}
+.bg__bluetrasparent{
+    background-color: #1c293a48;
+}
+.bp{
+    border-color: var(--primario);
+    
+}
+
+/**** position ****/
+
+.top-1{
+    top: 1rem;
+}
+.right-1{
+    right: 1rem;
+}
+.bottom-1{
+    bottom: 1rem;
+}
+.left-1{
+    left: 1rem;
+}
+
+/* parallax-section */
+.parallax-section {
+    height: 70vh;
+    background: linear-gradient(rgba(28, 41, 58, 0.50), rgba(28, 41, 58, 0.40)), url('../img/bg/kids_park.jpg') center/cover fixed no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    color: #fff;
+    text-align: end;
+    padding-right: 4rem;
+  }
+
+/**** padding ****/
+
+.seccion{
+    padding: 7rem 0;
+}
+.pt_96px{
+    padding-top: 6rem;
+}
+/* Sobre-escribir Clases de Bootstrap */
+.navbar-light .navbar-brand{
+    color: var(--primario);
+    text-transform: uppercase;
+    transition: all ease-in .2s;
+}
+.navbar-light .navbar-brand:hover{
+    color: var(--secundario);
+}
+.navbar-brand{
+    font-size: 1.5rem;
+}
+
+/* .p-2{
+}
+.p-2:first-child{
+}
+.p-2:nth-child{
+    
+}
+.p-2:last-child{
+   
+} */
+
+.charts{
+    width: 100%;
+    min-height: 546px;
+}
+.log{
+    width: 64px;
+}
+@media (max-width:768px) {
+    .log{
+        width: 50px;
+    }
+}
+.lgo{
+    width: 182px;
+}
+ .newsletter-input{
+    border-radius: 15px 0 0 15px;
+ }
+ .newsletter-button{
+    border-radius: 0 15px 15px 0;
+ }
+
+ .social{
+    width: 20px;
+    height: 16px;
+ }
+ figure{
+    border-radius: 54px 54px 54px 54px;   
+ }
+ .rd-main{
+    border-radius: 54px 54px 54px 54px;
+ }
+ .rd-op{
+    border-radius: 40px 40px 40px 40px;
+ }
+ .rd-ig{
+    border-radius: 75px 75px 75px 75px;
+ }
+/* zoom */
+ .ctr figure{
+    overflow: hidden;
+    transition: all 700ms ease;
+ }
+ .ctr figure img{
+    transition: all 700ms ease;
+ }
+ .ctr figure img:hover{
+    transform: scale(1.2);
+ }
+/*  */
+
+ @media (max-width:768px) {
+    .rps{
+        width: 4rem;
+    }
+}
+.clr{
+    color: #4167B0;
+    font-size: 20px;
+}
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+.btn-dw {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 100px;
+    right: 30px;
+    background: #fff;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+.btn-nt {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 180px;
+    right: 30px;
+    background: #fff;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+.btn-rg {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    left: 30px;
+    background: #fff;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+a{
+    text-decoration: none;
+}
+.cr{
+    border: 0px;
+}
+.ptb{
+    width: 4rem;
+    height: 4rem;
+}
+.cl{
+    color: white;
+}
+.bg__indicadores{
+    background-image: url('../img/fotos_pagina_ccima-06.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 30rem;
+}
+.grayscale{
+    filter: grayscale(100%);
+}
+.btn-tel{
+    width: 270px;
+}
+.white-text{
+    color: #fff;
+}
+.p_indicadores{
+    color: #fff;
+}

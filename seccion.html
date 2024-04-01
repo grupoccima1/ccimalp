@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sección con Cards</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .containerlp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .cardlp {
+    width: 50%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+  }
+  
+  .cardlp:hover {
+    width: 75%;
+  }
+  
+  .cardlp:hover ~ .cardlp {
+    width: 25%;
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .content h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .content button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .content button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<div class="containerlp">
+  <div class="cardlp" style="background-image: url('public/img/gamma1.jpg');">
+    <div class="content">
+      <h2>Texto de la Cardlp 1</h2>
+      <button>Botón de la Cardlp 1</button>
+    </div>
+  </div>
+  <div class="cardlp" style="background-image: url('public/img/image12.jpg');">
+    <div class="content">
+      <h2>Texto de la Cardlp 2</h2>
+      <button>Botón de la Cardlp 2</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
