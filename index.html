@@ -90,8 +90,8 @@
           </div>
           <div class="col-sm-12 col-md-5 order-md-1 d-flex flex-column justify-content-center pr-2">
             <h1 class="FuturaDemi fs-1 text-center text-lg-start">GENERAMOS PROGRESO</h1>
-            <h4 class="FuturaMedium text-center text-lg-start">CONSTRUYE TU FUTURO HOY</h3>
-            <p class="text-center text-lg-start">Somos tus aliados para asegurar un futuro financiero exitoso</p>
+            <h2 class="FuturaMedium text-center text-lg-start">CONSTRUYE TU FUTURO HOY</h2>
+            <h4 class="text-center text-lg-start ps">Somos tus aliados para asegurar un futuro financiero exitoso</h4>
             <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-3">
               <a href="https://api.whatsapp.com/send?phone=524422912223"><button class="btn text-white bg__danger me-md-2 btn-tel" type="button">Hablamos por Whatsapp</button></a>
             </div>
@@ -115,7 +115,7 @@
                 <label for="unidad_negocio" class="form-label"><span class="text-primario FuturaDemi text-uppercase">Unidad de Negocio</span></label>
                 <select id="investment-select" class="form-select w-75" aria-label="Default select example">
                   <option value="1" disabled><span>Industrial</span></option>
-                  <option value="2" selected><span>Habitacional</span></option>
+                  <option value="2" selected><span>Residencial</span></option>
                 </select>
               </div>
               <div class="mb-3">
@@ -188,6 +188,11 @@
                   </div>
                   <div class="carousel-item p-4">
                     <div class="">
+                            <img class="" src="./public/img/logos/Navetec.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="carousel-item p-4">
+                    <div class="">
                             <img class="" src="./public/img/logos/Construye.svg" alt="">
                     </div>
                   </div>
@@ -241,7 +246,7 @@
           <div class="row d-flex justify-content-center">
             <div class="col-12 col-lg-12">
               <!-- <img src="public/video/sherpa.mp4" class="d-block w-100" alt="imagen 01"> -->
-              <video src="public/video/El bajio 2023.mp4" class="d-block w-100" autoplay loop muted></video>
+              <video src="public/video/El_bajio_2023.mp4" class="d-block w-100" controls autoplay loop muted></video>
               <!-- Sin controles y con autoplay -->
             </div>
           </div>
@@ -269,7 +274,7 @@
               <img class="ptb" src="./public/img/icons/portto.svg" alt="">
             </div>
             <div class="col-12 d-flex justify-content-center">
-              <p>Cimatario</p>
+              <h4 class="FuturaBook">Cimatario</h4>
             </div>
             <figure>
               <a href="https://www.youtube.com/watch?v=c_EPHrxReT4"><img class="" src="public/img/image_14 1.jpg" alt=""></a>
@@ -280,7 +285,7 @@
               <img class="ptb" src="./public/img/icons/navetec.svg" alt="">
             </div>
             <div class="col-12 d-flex justify-content-center">
-              <p>Gamma ll</p>
+              <h4 class="FuturaBook">Gamma II</h4>
             </div>
             <figure>
               <a href="https://www.youtube.com/watch?v=jefg6pls8lw"><img class="" src="public/img/industrial-hall-1630742_640 1.jpg" alt=""></a>
@@ -291,7 +296,7 @@
               <img class="ptb" src="./public/img/icons/navetec.svg" alt="">
             </div>
             <div class="col-12 d-flex justify-content-center">
-              <p>Pedro Escobedo</p>
+              <h4 class="FuturaBook">Pedro Escobedo</h4>
             </div>
             <figure>
               <a href="https://www.youtube.com/watch?v=dqUMHbGR8qA"><img class="" src="public/img/blog-post-12-1280x854 2.jpg" alt=""></a>
@@ -302,7 +307,7 @@
               <img class="ptb" src="./public/img/icons/navetec.svg" alt="">
             </div>
             <div class="col-12 d-flex justify-content-center">
-              <p>Santa Rosa</p>
+              <h4 class="FuturaBook">Santa Rosa</h4>
             </div>
             <figure>
               <a href="https://www.youtube.com/watch?v=HyokbjeTmfM"><img class="" src="public/img/10 1.jpg" alt=""></a>
@@ -606,10 +611,6 @@
     </section> -->
 
 
-
-    
-
-
     <!-- Contacto -->
     <section class="seccion" id="beneficios">
       <div class="container">
@@ -631,22 +632,22 @@
                       <form class="flex-column py-4 py-lg-0">
                         <div class="mb-3">
                           <label for="exampleInputEmail1" class="form-label">Nombre Completo</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <input type="email" class="form-control formulario-input" id="exampleInputEmail1" aria-describedby="emailHelp">
                           <!--                           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
  -->
                         </div>
                         <div class="mb-3">
                           <label for="exampleInputPassword1" class="form-label">Telefono</label>
-                          <input type="text" class="form-control" id="exampleInputPassword1">
+                          <input type="text" class="form-control formulario-input" id="exampleInputPassword1">
                         </div>
                         <div class="mb-3">
                           <label for="exampleInputPassword1" class="form-label">Correo Electronico</label>
-                          <input type="text" class="form-control" id="exampleInputPassword1">
+                          <input type="text" class="form-control formulario-input" id="exampleInputPassword1">
                         </div>
 
                         <div class="mb-3">
                           <label for="exampleInputPassword1" class="form-label">Mensaje</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          <textarea class="form-control formulario-mensaje" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <button type="submit" class="btn text-white bg__primario">Enviar</button>
                       </form>
@@ -688,24 +689,24 @@
               <br>
               <br>
               <br>
-              <li><a class=" text-primary text-decoration-none" href="">Politicas de privacidad</a></li>
-              <li><a class=" text-primary text-decoration-none" href="">Condiciones de uso</a></li>
+              <li><a class=" text-primario text-decoration-none" href="">Politicas de privacidad</a></li>
+              <li><a class=" text-primario text-decoration-none" href="">Condiciones de uso</a></li>
             </ul>
           </div>
           <div class="col-12 col-lg-3 d-flex align-items-center">
             <ul class="list-unstyled">
-              <span class="fs_20px fw-bold"> Nuestras Marcas</span>
-              <li><a class=" text-primary text-decoration-none" href="">Construye</a></li>
-              <li><a class=" text-primary text-decoration-none" href="">Portto Blanco</a></li>
-              <li><a class=" text-primary text-decoration-none" href="">Navetec</a></li>
+              <span class="text-primario fs_20px fw-bold"> Nuestras Marcas</span>
+              <li><a class=" text-primario text-decoration-none" href="">Construye</a></li>
+              <li><a class=" text-primario text-decoration-none" href="">Portto Blanco</a></li>
+              <li><a class=" text-primario text-decoration-none" href="">Navetec</a></li>
 
             </ul>
           </div>
           <div class="col-12 col-lg-2 d-flex align-items-end">
             <ul class="list-unstyled">
-              <li><a class=" text-primary text-decoration-none" href="">1900 soluciones financieras</a></li>
-              <li><a class=" text-primary text-decoration-none" href="">Capital CCIMA</a></li>
-              <li><a class=" text-primary text-decoration-none" href="">Rent Solutions</a></li>
+              <li><a class=" text-primario text-decoration-none" href="">1900 soluciones financieras</a></li>
+              <li><a class=" text-primario text-decoration-none" href="">Capital CCIMA</a></li>
+              <li><a class=" text-primario text-decoration-none" href="">Rent Solutions</a></li>
             </ul>
           </div>
         </div>
