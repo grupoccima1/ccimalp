@@ -318,31 +318,54 @@
     </section>
 
 
-    <!-- Indicadores -->
-    <section class="seccion wow animate__swing bg__indicadores">
-      <div class="container bgk">
-        <h1 class="text-center cl">Indicadores</h1>
-        <div class="row d-flex justify-content-end">
-          <div class="col-6 col-lg-3 text-center pt-5">
-            <span class="num fs-1 fw-bold white-text" data-val="21">00</span>
-            <p class="FuturaBook p_indicadores">Años de experiencia</p>
+    <!-- indicadores -->
+    <div id="Indicadores" class="indicadores bg__indicadores">
+      <div class="">
+          <div class="container pt-4">
+              <h2 class="text-white text-center text-uppercase FuturaDemi fs_46px pt-5 pb-5">
+                  indicadores</h2>
+              <div class="row justify-content-center py-5">
+                  <div class="contador ocultar col-12 col-xl-3 count-box border-count-right">
+                      <div class="d-inline-flex">
+                          <!-- <img class="plus-counter" src="img/iconos/plus.svg" alt=""> -->
+                          <div class="FuturaDemi fs_54px contador_cantidad text-white" data-cantidad-total="21">
+                              0
+                          </div>
+                      </div>
+                      <span class="text-white text-center FuturaBook fs_28px">Años de Experiencia</span>
+                  </div>
+                  <div class="contador ocultar col-12 col-xl-3 count-box">
+                      <div class="d-inline-flex">
+                          <!-- <img class="plus-counter" src="img/iconos/plus.svg" alt=""> -->
+                          <div class="FuturaDemi fs_54px contador_cantidad text-white" data-cantidad-total="10">
+                              0
+                          </div>
+                      </div>
+                      <span class="text-white text-center FuturaBook fs_28px"> Desarrollos industriales y Residenciales</span>
+                  </div>
+                  <div class="contador ocultar col-12 col-xl-3 count-box border-count-left">
+                      <div class="d-inline-flex">
+                          <!-- <img class="plus-counter" src="img/iconos/plus.svg" alt=""> -->
+                          <div class="FuturaDemi fs_54px contador_cantidad text-white" data-cantidad-total="120">
+                              0
+                          </div>
+                      </div>
+                      <span class="text-white text-center FuturaBook fs_28px">Colaboradores</span>
+                  </div>
+                  <div class="contador ocultar col-12 col-xl-3 count-box border-count-left">
+                      <div class="d-inline-flex">
+                          <!-- <img class="plus-counter" src="img/iconos/plus.svg" alt=""> -->
+                          <div class="FuturaDemi fs_54px contador_cantidad text-white" data-cantidad-total="2400">
+                              0
+                          </div>
+                      </div>
+                      <span class="text-white text-center FuturaBook fs_28px">Clientes</span>
+                  </div>
+              </div>
           </div>
-          <div class="col-6 col-lg-3 text-center pt-5">
-            <span class="num fs-1 fw-bold white-text" data-val="10">00</span>
-            <p class="FuturaBook p_indicadores">Desarrollos industriales y Residenciales</p>
-          </div>
-          <div class="col-6 col-lg-3 text-center pt-5">
-            <span class="num fs-1 fw-bold white-text" data-val="120">000</span>
-            <p class="FuturaBook p_indicadores">Colaboradores</p>
-          </div>
-          <div class="col-6 col-lg-3 text-center pt-5">
-            <span class="num fs-1 fw-bold white-text" data-val="2400">0000</span>
-            <p class="FuturaBook p_indicadores">Clientes</p>
-          </div>
-        </div>
       </div>
-    </section>
-    
+    </div>
+
     <!-- Testimonios -->
     <section class="seccion ">
       <div class="container">
@@ -757,21 +780,19 @@
   <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
 
   <!-- Script -->
-  <script src="./public/js/main.js"></script>
-  <script src="./public/js/ct.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
   </script>
+  <script src="./public/js/main.js"></script>
+  <script src="./public/js/contador.js"></script>
   <script>
     var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
     var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
       return new bootstrap.Popover(popoverTriggerEl)
     })
   </script>
-  <script src="./public/js/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
+  
 
 </body>
 
