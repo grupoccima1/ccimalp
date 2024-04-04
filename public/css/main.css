@@ -22,8 +22,6 @@ img {
     width: 100%;
 }
 /***** Fuentes *****/
-
-
 @font-face {
     font-family: FuturaBold;
     src: url('../fonts/Futura/FuturaPTBold.otf');
@@ -39,6 +37,10 @@ img {
 @font-face {
     font-family: FuturaMedium;
     src: url('../fonts/Futura/FuturaPTMedium.otf');
+}
+@font-face {
+    font-family: FuturaHeavy;
+    src: url('../fonts/Futura//FuturaPTHeavy.otf');
 }
 @font-face {
     font-family: Roboto-Light;
@@ -76,6 +78,9 @@ img {
 }
 .FuturaMedium{
     font-family: 'FuturaMedium';
+}
+.FuturaHeavy{
+    font-family: 'FuturaHeavy';
 }
 .RobotoBold{
     font-family: 'Roboto-Bold';
@@ -116,6 +121,12 @@ img {
 }
 .fs_30px{
     font-size: 1.875rem;
+}
+.fs_32px{
+    font-size: 2rem;
+}
+.fs_40px{
+    font-size: 2.5rem;
 }
 .fs_46px{
     font-size: 2.875rem;
@@ -184,7 +195,6 @@ img {
 h1, h2 h3, h4{
     color: var(--primario);
     font-family: 'Roboto-Medium';
-    text-transform: uppercase;   
 }
 h1{
     font-size: 2rem;
@@ -233,13 +243,6 @@ p{
 .bg__bluetrasparent{
     background-color: #1c293a48;
 }
-.bg-indicadores{
-    background-image: url("../img/bg/indicadores.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .bp{
     border-color: var(--primario);
     
@@ -441,7 +444,7 @@ a{
     background-image: url('../img/fotos_pagina_ccima-06.jpg');
     background-position: center center;
     background-size: cover;
-    height: 35rem;
+    height: 30rem;
 }
 .grayscale{
     filter: grayscale(100%);
@@ -455,19 +458,38 @@ a{
 .p_indicadores{
     color: #fff;
 }
+/* .tmo{
+    height: 32px;
+    width: 32px;
+} */
 
-
-.count-box{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 3rem 0;
+.contador{
+    width: 24.7%;
+    text-align: center;
+    display: inline-block;
 }
 
+.contador_cantidad{
+    font-size: 30px;
+    margin: 10px 0;
+    font-weight: 900;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
 
 .ocultar{
     opacity: 0;
 }
+
 .animar{
     animation: aparecer 1.3s;
 }
