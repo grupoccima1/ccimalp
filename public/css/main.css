@@ -231,6 +231,13 @@ p{
 .bg__bluetrasparent{
     background-color: #1c293a48;
 }
+.bg-indicadores{
+    background-image: url("../img/bg/indicadores.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .bp{
     border-color: var(--primario);
     
@@ -432,7 +439,7 @@ a{
     background-image: url('../img/fotos_pagina_ccima-06.jpg');
     background-position: center center;
     background-size: cover;
-    height: 30rem;
+    height: 35rem;
 }
 .grayscale{
     filter: grayscale(100%);
@@ -445,4 +452,20 @@ a{
 }
 .p_indicadores{
     color: #fff;
+}
+
+
+.count-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 0;
+}
+
+
+.ocultar{
+    opacity: 0;
+}
+.animar{
+    animation: aparecer 1.3s;
 }
