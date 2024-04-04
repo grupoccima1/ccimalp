@@ -22,6 +22,8 @@ img {
     width: 100%;
 }
 /***** Fuentes *****/
+
+
 @font-face {
     font-family: FuturaBold;
     src: url('../fonts/Futura/FuturaPTBold.otf');
